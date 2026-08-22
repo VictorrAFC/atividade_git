@@ -1,0 +1,66 @@
+git init
+git status
+git add .
+git status
+git commit -m "Criando estrutura inicial do projeto"
+
+git status
+git add index.html
+git commit -m "Adicionando conteudo na pagina inicial"
+git log --oneline
+
+git status
+git add .
+git commit -m "Adicionando páginas sobre contato e estilos"
+
+git branch -M main
+git remote add origin https://github.com/VictorrAFC/atividade_git.git
+git remote -v
+git push -u origin main
+
+git status
+git add cantores.html
+git commit -m "Adicionando pagina de cantores"
+git push
+
+git log
+git log --oneline
+
+git status
+git add teste.txt
+git commit -m "Adicionando arquivo de teste"
+git push
+git rm teste.txt
+git status
+git commit -m "Removendo arquivo de teste"
+git push
+
+git mv style.css estilo.css
+git status
+git commit -m "Renomeando arquivo style.css para estilo.css"
+git push
+
+git add contato.html sobre.html
+git commit -m "Atualizando referencias para estilo.css"
+git push
+
+git mv estilo.css css/estilo.css
+git status
+git commit -m "Movendo arquivo de estilo para pasta css"
+git push
+
+git status
+git add .
+git commit -m "Adicionando arquivo gitignore"
+git push
+
+git mv css/.gitignore .gitignore
+git mv css/anotacoes.txt anotacoes.txt
+git status
+git add .
+git commit -m "Corrigindo local dos arquivos do gitignore"
+git push
+
+git status
+git ls-files
+git log --oneline
